@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 10rem 5vw;
+    padding: 0;
+    align-content: space-between;
+    column-gap: 20px;
+    list-style-type: none;
+}
