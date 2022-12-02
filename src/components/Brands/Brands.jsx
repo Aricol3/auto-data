@@ -33,7 +33,7 @@ const brands = [
 
 const Brands = () => {
     return (
-        <div className="container">
+        <div className="brands-container">
             {brands.map((brand) => (
                 <div item key={brand.id} xs={12} sm={6} md={4} lg={3}>
                     <Brand brand={brand}/>
