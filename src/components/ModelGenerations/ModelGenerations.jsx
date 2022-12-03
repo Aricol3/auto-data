@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, useParams} from "react-router-dom";
 import styles from "./BrandModels.module.css";
-import BrandModel from "./BrandModel/BrandModel";
+import ModelGeneration from "./ModelGeneration/ModelGeneration";
 
 const BrandModels = () => {
     const {brandName} = useParams();
@@ -11,7 +11,7 @@ const BrandModels = () => {
         <div className={styles.modelsContainer}>
             {brandModels.map((model) => (
                 <div key={model.id}>
-                    <Link className={styles.link} to={`/${model.name}`}><BrandModel model={model}/></Link>
+
                 </div>
             ))}
         </div>
