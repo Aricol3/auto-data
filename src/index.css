@@ -7,3 +7,17 @@
     font-family: "Montserrat SemiBold";
     src: url(./fonts/Montserrat/static/Montserrat-SemiBold.ttf);
 }
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fef8f8;
+}

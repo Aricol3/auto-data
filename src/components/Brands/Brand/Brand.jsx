@@ -1,13 +1,14 @@
 import React from "react";
 
-import "./Brand.css"
+import styles from "./Brand.module.css";
+
 
 const Brand = ({brand}) => {
     return (
-        <a href="" className="card">
-            <img src={brand.image} className="brand-logo" alt="brand logo"/>
-            <div className="brand-overlay">
-                <h3 className="brand-name">{brand.name}</h3>
+        <a href="" className={styles.card}>
+            <img src={brand.image} className={styles.brandLogo} alt="brand logo"/>
+            <div className={styles.brandOverlay}>
+                <h3 className={styles.brandName}>{brand.name}</h3>
             </div>
         </a>
     );
