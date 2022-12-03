@@ -1,21 +1,26 @@
 import React from "react";
 import {Link, useParams} from "react-router-dom";
-import styles from "./BrandModels.module.css";
+import styles from "./ModelGenerations.module.css";
 import ModelGeneration from "./ModelGeneration/ModelGeneration";
 
-const BrandModels = () => {
-    const {brandName} = useParams();
-    const brandModels = require(`../data/BrandModels/${brandName}`).default;
+const ModelGenerations = () => {
+    const {brandName, modelName} = useParams();
+    const car = require(`../../data/${brandName}`).default;
 
     return (
         <div className={styles.modelsContainer}>
-            {brandModels.map((model) => (
-                <div key={model.id}>
-
-                </div>
-            ))}
+            {car.map((model) => {
+                if (modelName == model.model) {
+                    return (
+                        <div key={model.id}>
+                            <Link className={styles.link} to={`./${model.generation}`}><ModelGeneration
+                                model={model}/></Link>
+                        </div>
+                    )
+                }
+            })}
         </div>
     )
 }
 
-export default BrandModels;
+export default ModelGenerations;

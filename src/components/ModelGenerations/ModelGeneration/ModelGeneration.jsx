@@ -1,14 +1,14 @@
 import React from "react";
 
-import styles from "./BrandModel.module.css";
+import styles from "./ModelGeneration.module.css";
 
 
-const BrandModel = ({model}) => {
+const ModelGeneration = ({model}) => {
     return (
         <div className={styles.model}>
-            {model.name}
+            {model.generation}
         </div>
     );
 }
 
-export default BrandModel;
+export default ModelGeneration;

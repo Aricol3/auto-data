@@ -6,7 +6,7 @@ import styles from "./BrandModel.module.css";
 const BrandModel = ({model}) => {
     return (
         <div className={styles.model}>
-            {model.name}
+            {model.model}
         </div>
     );
 }

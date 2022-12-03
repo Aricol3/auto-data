@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import Brand from "./Brand/Brand";
 import styles from "./Brands.module.css";
-import brands from "../data/Brands";
+import brands from "../../data/Brands";
 
 const Brands = () => {
     return (

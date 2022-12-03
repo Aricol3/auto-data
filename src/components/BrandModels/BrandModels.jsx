@@ -5,15 +5,21 @@ import BrandModel from "./BrandModel/BrandModel";
 
 const BrandModels = () => {
     const {brandName} = useParams();
-    const brandModels = require(`../data/BrandModels/${brandName}`).default;
+    const car = require(`../../data/${brandName}`).default;
+    let uniqueModels = [];
 
     return (
         <div className={styles.modelsContainer}>
-            {brandModels.map((model) => (
-                <div key={model.id}>
-                    <Link className={styles.link} to={`/${model.name}`}><BrandModel model={model}/></Link>
-                </div>
-            ))}
+            {car.map((model) => {
+                if (uniqueModels.indexOf(model.model) === -1) {
+                    uniqueModels.push(model.model);
+                    return (
+                        <div key={model.id}>
+                            <Link className={styles.link} to={`./${model.model}`}><BrandModel model={model}/></Link>
+                        </div>
+                    )
+                }
+            })}
         </div>
     )
 }
