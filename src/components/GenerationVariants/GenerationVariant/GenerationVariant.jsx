@@ -6,7 +6,7 @@ import styles from "./GenerationVariant.module.css";
 const GenerationVariant = ({model}) => {
     return (
         <div className={styles.model}>
-            {model.engine}
+            {model.variant}
         </div>
     );
 }

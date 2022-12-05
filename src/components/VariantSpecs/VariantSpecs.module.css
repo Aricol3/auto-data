@@ -4,6 +4,10 @@
     align-items: flex-start;
     margin-left: 2rem;
 }
+.container{
+    display: flex;
+    text-align: center;
+}
 
 .model {
     position: relative;

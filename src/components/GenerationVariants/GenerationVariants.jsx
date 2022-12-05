@@ -14,7 +14,7 @@ const GenerationVariants = () => {
                 if (modelName === model.model && generationName === model.generation) {
                     return (
                         <div key={model.id}>
-                            <Link className={styles.link} to={`./${model.engine}`}><GenerationVariant
+                            <Link className={styles.link} to={`./${model.variant}`}><GenerationVariant
                                 model={model}/></Link>
                         </div>
                     )
