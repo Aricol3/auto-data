@@ -6,12 +6,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./CustomSwiper.css";
+import brands from "../../../data/Brands";
+import {Link} from "react-router-dom";
+import Brand from "../../Brands/Brand/Brand";
 
 function zoom() {
 
 }
 
-const Slideshow = () => {
+const Slideshow = ({vehicle}) => {
     return (
             <Swiper
                 cssMode={true}
@@ -23,9 +26,12 @@ const Slideshow = () => {
                 className={styles.container}
                 onClick={zoom}
             >
-                <SwiperSlide><img src="https://hips.hearstapps.com/hmg-prod/images/2020-bmw-m8-competition-coupe-104-1570575778.jpg?crop=0.800xw:0.599xh;0.0717xw,0.267xh&resize=1200:*"/></SwiperSlide>
-                <SwiperSlide><img src="https://www.bmw.ro/content/dam/bmw/common/all-models/m-series/m8-coupe/2022/onepager/bmw-m8-coupe-onepager-sp-desktop.jpg.asset.1658234452853.jpg"/></SwiperSlide>
-                <SwiperSlide><img src="https://media.bmwblog.ro/2020/07/LP_BMW_M8_V4_007.jpg"/></SwiperSlide>
+                {vehicle.images.map((image) => (
+                    <div>
+                        <SwiperSlide><img src={image}/></SwiperSlide>
+                    </div>
+                ))}
+
             </Swiper>
     );
 }

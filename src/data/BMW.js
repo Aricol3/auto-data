@@ -1,7 +1,16 @@
+import {SwiperSlide} from "swiper/react";
+import React from "react";
+
 export default [
     {
         id: 1,
         brand: "BMW",
+        images: [
+            "https://www.mad4wheels.com/img/free-car-images/mobile/10920/bmw-3er-f30-by-kelleners-sport-2012-354582.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/5/55/BMW_328i_F30_2012_hl_%28cropped%29.jpg",
+            "https://s1.cdn.autoevolution.com/images/gallery/BMW-3-Series--F30--4412_29.jpg",
+            "https://s1.cdn.autoevolution.com/images/gallery/BMW-3-Series--F30--4412_16.jpg"
+        ],
         model: "3 series",
         generation: "3 series Sedan (F30)",
         variant: "320d (184 Hp) Automatic",
@@ -45,17 +54,56 @@ export default [
         rearSuspension: "Independent multi-link suspension"
     },
     {
-        id: 2,
+        id: 1,
         brand: "BMW",
-        model: "5-series",
-        generation: "5-series-Sedan-(F10)",
-        engine: "520d (184 Hp)"
+        images: [
+            "https://live.staticflickr.com/4855/45971789471_80dda2615d_b.jpg",
+            "https://www.vogueautomotive.com/wp-content/uploads/2021/09/VA-G30ABS010-2.jpg",
+            "https://s1.cdn.autoevolution.com/images/gallery/BMW-5-Series--G30--5803_20.jpg",
+            "https://s1.cdn.autoevolution.com/images/gallery/BMW-5-Series--G30--5803_15.jpg",
+            "https://s1.cdn.autoevolution.com/images/gallery/BMW-5-Series--G30--5803_16.jpg",
+            "https://s1.cdn.autoevolution.com/images/gallery/BMW-5-Series--G30--5803_13.jpg"
+        ],
+        model: "5 Series",
+        generation: "5 Series Sedan (G30)",
+        variant: "M550i (530 Hp) xDrive Steptronic",
+        startOfProduction: "2019 year",
+        endOfProduction: "2020 year",
+        powertrainArchitecture: "Internal Combustion Engine",
+        bodyType: "Sedan",
+        seats: "5",
+        doors: "4",
+        fuelConsumptionUrban: "13.5-13.9 l/100 km",
+        fuelConsumptionExtraUrban: "7.6-7.8 l/100 km",
+        fuelConsumptionCombined: "9.9-10 l/100 km",
+        co2Emissions: "225-227 g/km",
+        fuelType: "Petrol (Gasoline)",
+        acceleration0to100: "3.8 sec",
+        maximumSpeed: "250 km/h, Electronically limited",
+        emissionStandard: "Euro 6d-TEMP",
+        power: "530 Hp @ 5500-6000 rpm",
+        torque: "750 Nm @ 1800-4600 rpm",
+        engineLocation: "Front, Longitudinal",
+        engineModel: "N63B44D",
+        engineDisplacement: "4395 cm3",
+        numberOfCylinders: "8",
+        positionOfCylinders: "V-engine",
+        fuelSystem: "Direct injection",
+        engineAspiration: "Twin-power turbo, Intercooler",
+        engineOilCapacity: "10.5 l",
+        kerbWeight: "1870 kg",
+        maxWeight: "2480 kg",
+        trunkSpace: "530 l",
+        fuelTankCapacity: "68 l",
+        length: "4962 mm",
+        width: "1868 mm",
+        height: "1467 mm",
+        wheelbase: "2975 mm",
+        rideHeight: "140 mm",
+        minimumTurningCycle: "12.4 m",
+        drivetrainArchitecture: "All wheel drive (4x4)",
+        numberOfGearsAndGearbox: "8 gears, automatic transmission Steptronic",
+        frontSuspension: "Double wishbone",
+        rearSuspension: "Independent multi-link suspension"
     },
-    {
-        id: 3,
-        brand: "BMW",
-        model: "5-series",
-        generation: "5-series-GT-(F10)",
-        engine: "530 (184 Hp)"
-    }
 ];

@@ -15,7 +15,7 @@ const VariantSpecs = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.slideshow}><Slideshow/></div>
+            <div className={styles.slideshow}><Slideshow vehicle={vehicle}/></div>
 
             <hr/>
             <Specifications vehicle={vehicle}/>
