@@ -10,7 +10,7 @@ import VariantSpecs from "./components/VariantSpecs/VariantSpecs";
 
 const App = () => {
     return (
-        <Router>
+        <Router basename="/auto-data">
             <Navbar/>
             <Routes>
                 <Route exact path='/' element={<Brands/>}/>
