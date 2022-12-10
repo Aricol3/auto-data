@@ -1,7 +1,7 @@
 {
   "name": "auto-data",
   "version": "0.1.0",
-  "homepage": "/auto-data/#",
+  "homepage": "https://aricol3.github.io/auto-data",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
