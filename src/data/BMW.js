@@ -67,7 +67,7 @@ export default [
         model: "5 Series",
         generation: "5 Series Sedan (G30)",
         variant: "M550i (530 Hp) xDrive Steptronic",
-        startOfProduction: "2019 year",
+        startOfProduction: "2017 year",
         endOfProduction: "2020 year",
         powertrainArchitecture: "Internal Combustion Engine",
         bodyType: "Sedan",
