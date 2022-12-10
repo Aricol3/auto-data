@@ -10,7 +10,7 @@ import VariantSpecs from "./components/VariantSpecs/VariantSpecs";
 
 const App = () => {
     return (
-        <Router basename="/auto-data">
+        <Router basename={process.env.PUBLIC_URL || ''}>
             <Navbar/>
             <Routes>
                 <Route exact path='/' element={<Brands/>}/>
