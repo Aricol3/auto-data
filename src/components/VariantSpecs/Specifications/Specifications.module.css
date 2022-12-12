@@ -2,6 +2,7 @@
     font-family: "Montserrat Semibold", serif;
     font-weight: 600;
     font-size: 1.3rem;
+    max-width: 50vw;
 }
 
 .h4 {

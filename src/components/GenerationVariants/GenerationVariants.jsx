@@ -11,11 +11,18 @@ const GenerationVariants = () => {
         <div className={styles.generationsContainer}>
             {/* eslint-disable-next-line array-callback-return */}
             {car.map((model) => {
-                if (modelName === model.model && generationName === model.generation) {
+                if (modelName === model[0].model && generationName === model[0].generation) {
+                    const renderVariants = [];
+                    for (let index = 2; index < model.length; index++) {
+                        renderVariants.push(
+                            <Link className={styles.link} to={`./${model[index].variant}`}><GenerationVariant
+                                model={model} index={index}
+                            /></Link>
+                        )
+                    }
                     return (
-                        <div key={model.id}>
-                            <Link className={styles.link} to={`./${model.variant}`}><GenerationVariant
-                                model={model}/></Link>
+                        <div>
+                            {renderVariants}
                         </div>
                     )
                 }

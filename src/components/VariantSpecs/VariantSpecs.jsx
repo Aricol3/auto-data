@@ -8,19 +8,26 @@ const VariantSpecs = () => {
     const {brandName, modelName, generationName, variantName} = useParams();
     const allModels = require(`../../data/${brandName}`).default;
 
-    let vehicleImages = allModels[0][`${brandName} ${generationName}`];
 
     let vehicle = allModels.find(model => {
-        return modelName === model.model && generationName === model.generation && variantName === model.variant
+        return modelName === model[0].model && generationName === model[0].generation
     })
+
+    let vehicleImages = vehicle[1].images;
+    let variantNumber;
+    for (let index = 2; index < vehicle.length; index++) {
+        if (variantName === vehicle[index].variant) {
+            variantNumber = index;
+        }
+    }
 
 
     return (
         <div className={styles.container}>
-            <div className={styles.slideshow}><Slideshow vehicleImages={vehicleImages}/></div>
+            <Slideshow vehicleImages={vehicleImages}/>
 
             <hr/>
-            <Specifications vehicle={vehicle}/>
+            <Specifications vehicle={vehicle} variantNumber={variantNumber}/>
         </div>
     )
 }

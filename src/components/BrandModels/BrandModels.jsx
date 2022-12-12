@@ -11,11 +11,11 @@ const BrandModels = () => {
     return (
         <div className={styles.modelsContainer}>
             {car.map((model) => {
-                if (uniqueModels.indexOf(model.model) === -1) {
-                    uniqueModels.push(model.model);
+                if (uniqueModels.indexOf(model[0].model) === -1) {
+                    uniqueModels.push(model[0].model);
                     return (
-                        <div key={model.id}>
-                            <Link className={styles.link} to={`./${model.model}`}><BrandModel model={model}/></Link>
+                        <div>
+                            <Link className={styles.link} to={`./${model[0].model}`}><BrandModel model={model}/></Link>
                         </div>
                     )
                 }

@@ -11,12 +11,12 @@ const ModelGenerations = () => {
     return (
         <div className={styles.modelsContainer}>
             {car.map((model) => {
-                if (modelName == model.model) {
-                    if (uniqueGenerations.indexOf(model.generation) === -1) {
-                        uniqueGenerations.push(model.generation);
+                if (modelName == model[0].model) {
+                    if (uniqueGenerations.indexOf(model[0].generation) === -1) {
+                        uniqueGenerations.push(model[0].generation);
                         return (
-                            <div key={model.id}>
-                                <Link className={styles.link} to={`./${model.generation}`}><ModelGeneration
+                            <div>
+                                <Link className={styles.link} to={`./${model[0].generation}`}><ModelGeneration
                                     model={model}/></Link>
                             </div>
                         )
