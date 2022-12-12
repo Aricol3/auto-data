@@ -13,4 +13,5 @@
 .p {
     font-family: "Montserrat Medium", serif;
     font-weight: 500;
+    max-width: 50vw;
 }

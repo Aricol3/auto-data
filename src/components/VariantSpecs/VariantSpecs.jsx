@@ -8,6 +8,8 @@ const VariantSpecs = () => {
     const {brandName, modelName, generationName, variantName} = useParams();
     const allModels = require(`../../data/${brandName}`).default;
 
+    let vehicleImages = allModels[0][`${brandName} ${generationName}`];
+
     let vehicle = allModels.find(model => {
         return modelName === model.model && generationName === model.generation && variantName === model.variant
     })
@@ -15,7 +17,7 @@ const VariantSpecs = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.slideshow}><Slideshow vehicle={vehicle}/></div>
+            <div className={styles.slideshow}><Slideshow vehicleImages={vehicleImages}/></div>
 
             <hr/>
             <Specifications vehicle={vehicle}/>

@@ -6,7 +6,7 @@ import BrandModel from "./BrandModel/BrandModel";
 const BrandModels = () => {
     const {brandName} = useParams();
     const car = require(`../../data/${brandName}`).default;
-    let uniqueModels = [];
+    const uniqueModels = [];
 
     return (
         <div className={styles.modelsContainer}>
