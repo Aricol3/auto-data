@@ -1,12 +1,12 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
     {
-      "BMW 3 Series Sedan (F30)":  [
-          "https://www.mad4wheels.com/img/free-car-images/mobile/10920/bmw-3er-f30-by-kelleners-sport-2012-354582.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/5/55/BMW_328i_F30_2012_hl_%28cropped%29.jpg",
-          "https://s1.cdn.autoevolution.com/images/gallery/BMW-3-Series--F30--4412_29.jpg",
-          "https://s1.cdn.autoevolution.com/images/gallery/BMW-3-Series--F30--4412_16.jpg"
-      ]
+        "BMW 3 Series Sedan (F30)": [
+            "https://www.mad4wheels.com/img/free-car-images/mobile/10920/bmw-3er-f30-by-kelleners-sport-2012-354582.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/5/55/BMW_328i_F30_2012_hl_%28cropped%29.jpg",
+            "https://s1.cdn.autoevolution.com/images/gallery/BMW-3-Series--F30--4412_29.jpg",
+            "https://s1.cdn.autoevolution.com/images/gallery/BMW-3-Series--F30--4412_16.jpg"
+        ]
     },
     {
         brand: 'BMW',
