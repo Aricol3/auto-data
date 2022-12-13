@@ -6,24 +6,21 @@ import ModelGeneration from "./ModelGeneration/ModelGeneration";
 const ModelGenerations = () => {
     const {brandName, modelName} = useParams();
     const allModels = require(`../../data/${brandName}`).default;
-    const uniqueGenerations = [];
+    const allModelGenerations = [];
+    const renderGenerations = [];
+    allModels.map((model) => {
+        if (modelName === model.model) {
+            allModelGenerations.push(model);
+        }
+    })
+    // eslint-disable-next-line array-callback-return
+    allModelGenerations.map((model) => {
+        renderGenerations.push(<Link className={styles.link} to={`./${model.generation}`}><ModelGeneration model={model}/></Link>);
+    })
 
     return (
-        <div className={styles.modelsContainer}>
-            {/* eslint-disable-next-line array-callback-return */}
-            {allModels.map((model) => {
-                if (modelName === model.model) {
-                    if (uniqueGenerations.indexOf(model.generation) === -1) {
-                        uniqueGenerations.push(model.generation);
-                        return (
-                            <div>
-                                <Link className={styles.link} to={`./${model.generation}`}><ModelGeneration
-                                    model={model}/></Link>
-                            </div>
-                        )
-                    }
-                }
-            })}
+        <div className={styles.generationsContainer}>
+            {renderGenerations}
         </div>
     )
 }

@@ -1,11 +1,10 @@
 .modelsContainer {
     display: flex;
     flex-wrap: wrap;
-    margin: 10rem 5vw;
+    margin: 7rem 5vw 10rem;
     justify-content: space-around;
     gap: 50px;
 }
-
 
 .link{
     text-decoration: none;

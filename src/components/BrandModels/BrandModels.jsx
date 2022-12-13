@@ -14,9 +14,11 @@ const BrandModels = () => {
         }
     });
     uniqueModels.sort((a, b) => a.localeCompare(b));
+    // eslint-disable-next-line array-callback-return
     uniqueModels.map((modelName) => {
         let previewImage;
         let newestModelYear = -1;
+        // eslint-disable-next-line array-callback-return
         allModels.map((model) => {
             if (modelName === model.model && newestModelYear < Number(model.variants[0].specs[11].replace(/\D/g, ''))) {
                 newestModelYear = model.variants[0].specs[11];
@@ -25,7 +27,6 @@ const BrandModels = () => {
         })
         renderModels.push(<Link className={styles.link} to={`./${modelName}`}><BrandModel modelName={modelName} previewImage={previewImage}/></Link>)
     });
-
 
     return (
         <div className={styles.modelsContainer}>
