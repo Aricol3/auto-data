@@ -10,13 +10,13 @@ const VariantSpecs = () => {
 
 
     let vehicle = allModels.find(model => {
-        return modelName === model[0].model && generationName === model[0].generation
+        return modelName === model.model && generationName === model.generation
     })
 
-    let vehicleImages = vehicle[1].images;
+    let vehicleImages = vehicle.images;
     let variantNumber;
-    for (let index = 2; index < vehicle.length; index++) {
-        if (variantName === vehicle[index].variant) {
+    for (let index = 0; index < vehicle.variants.length; index++) {
+        if (variantName === vehicle.variants[index].variant) {
             variantNumber = index;
         }
     }

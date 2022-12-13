@@ -5,18 +5,18 @@ import GenerationVariant from "./GenerationVariant/GenerationVariant";
 
 const GenerationVariants = () => {
     const {brandName, modelName, generationName} = useParams();
-    const car = require(`../../data/${brandName}`).default;
+    const allModels = require(`../../data/${brandName}`).default;
 
     return (
         <div className={styles.generationsContainer}>
             {/* eslint-disable-next-line array-callback-return */}
-            {car.map((model) => {
-                if (modelName === model[0].model && generationName === model[0].generation) {
+            {allModels.map((model) => {
+                if (modelName === model.model && generationName === model.generation) {
                     const renderVariants = [];
-                    for (let index = 2; index < model.length; index++) {
+                    for (let variantNumber = 0; variantNumber < model.variants.length; variantNumber++) {
                         renderVariants.push(
-                            <Link className={styles.link} to={`./${model[index].variant}`}><GenerationVariant
-                                model={model} index={index}
+                            <Link className={styles.link} to={`./${model.variants[variantNumber].variant}`}><GenerationVariant
+                                model={model} variantNumber={variantNumber}
                             /></Link>
                         )
                     }
