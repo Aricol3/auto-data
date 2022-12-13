@@ -34,7 +34,7 @@
 .generationName {
     color: black;
     font-family: "Montserrat Medium", serif;
-    font-size: 1.1em;
+    font-size: max(12px,1.5vw);
     padding: 0.5em;
     margin: 0 0 .3em;
 }
@@ -42,7 +42,7 @@
 .years, .power {
     color: black;
     font-family: "Montserrat Medium", serif;
-    font-size: 1em;
+    font-size: max(10px,1.2vw);
     padding: 0.5em;
     margin: 0 0 .3em;
 }

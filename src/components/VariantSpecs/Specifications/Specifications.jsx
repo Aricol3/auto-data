@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Specifications.module.css"
 
 
-const Specifications = ({vehicle,variantNumber}) => {
+const Specifications = ({vehicle, variantNumber}) => {
     const specs = vehicle.variants[variantNumber].specs;
     const renderSpecs = [];
     const headings = ["General Information", "Performance specs", "Engine specs", "Electric cars and hybrids specs", "Internal combustion engine specs", "Space, Volume and weights", "Dimensions", "Drivetrain, brakes and suspension specs"]
@@ -11,9 +11,14 @@ const Specifications = ({vehicle,variantNumber}) => {
             renderSpecs.push(<h4 className={styles.h4}>{specs[i]}</h4>);
             i--;
         } else {
-            if (specs[i] === "CO2 emissions") {
-                renderSpecs.push(<p className={styles.p}>CO<sub>2</sub> emissions: {specs[i + 1]}</p>);
-            } else renderSpecs.push(<p className={styles.p}>{specs[i]}: {specs[i + 1]}</p>);
+            if (specs[i] === "Electric motor 1" || specs[i] === "Electric motor 2" || specs[i] === "Electric motor 3" || specs[i] === "Electric motor 4") {
+                renderSpecs.push(<h5 className={styles.h5}>{specs[i]}</h5>);
+                i--
+            } else {
+                if (specs[i] === "CO2 emissions") {
+                    renderSpecs.push(<p className={styles.p}>CO<sub>2</sub> emissions: {specs[i + 1]}</p>);
+                } else renderSpecs.push(<p className={styles.p}>{specs[i]}: {specs[i + 1]}</p>);
+            }
         }
     }
 

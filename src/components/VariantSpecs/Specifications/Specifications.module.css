@@ -11,6 +11,12 @@
     font-size: 1.1rem;
 }
 
+.h5 {
+    font-family: "Montserrat Semibold", serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 .p {
     font-family: "Montserrat Medium", serif;
     font-weight: 500;
