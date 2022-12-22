@@ -1,9 +1,11 @@
 .card {
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     background:-webkit-linear-gradient(top,rgba(255,255,250,0.8),transparent);
-    max-width: 100%;
     position: relative;
     height: 100%;
+    min-height: 170px;
+    max-width: 230px;
+    max-height: 260px;
     border-radius: 15px 15px 20px 20px;
     overflow: hidden;
     text-decoration: none;

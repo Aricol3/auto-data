@@ -1,8 +1,7 @@
 .generationsContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 2rem;
+    text-align: center;
 }
 
 .link{

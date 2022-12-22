@@ -2,6 +2,6 @@
     display: grid;
     grid-gap: 50px;
     margin: 10rem 5vw;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 0.18fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/3, max(100px, 100%/6)), 1fr));
     justify-content: center;
 }

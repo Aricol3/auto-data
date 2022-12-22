@@ -24,7 +24,7 @@ const VariantSpecs = () => {
 
     return (
         <div className={styles.container}>
-            <Slideshow vehicleImages={vehicleImages}/>
+            <div className={styles.slideshow}><Slideshow vehicleImages={vehicleImages}/></div>
 
             <hr/>
             <Specifications vehicle={vehicle} variantNumber={variantNumber}/>

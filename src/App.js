@@ -7,10 +7,12 @@ import BrandModels from "./components/BrandModels/BrandModels";
 import ModelGenerations from "./components/ModelGenerations/ModelGenerations";
 import GenerationVariants from "./components/GenerationVariants/GenerationVariants";
 import VariantSpecs from "./components/VariantSpecs/VariantSpecs";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const App = () => {
     return (
         <HashRouter>
+            <ScrollToTop/>
             <Navbar/>
             <Routes>
                 <Route exact path='/' element={<Brands/>}/>
