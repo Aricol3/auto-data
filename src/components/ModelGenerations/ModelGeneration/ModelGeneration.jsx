@@ -25,10 +25,11 @@ const ModelGeneration = ({model}) => {
         for (let i = 0; i < engineChars.length; i++) {
             if (start === true) {
                 if (engineChars[i] === " ") break;
-                power=power.concat(engineChars[i]);
+                power = power.concat(engineChars[i]);
             }
             if (engineChars[i] === "(") start = true;
         }
+        power = parseInt(power)
         if (power < minPower) minPower = power;
         if (power > maxPower) maxPower = power;
     });

@@ -98,14 +98,6 @@ export default [
 			'https://www.auto-data.net//images/f65/Koenigsegg-CCR.jpg',
 			'https://www.auto-data.net//images/f121/Koenigsegg-CCR.jpg',
 			'https://www.auto-data.net//images/f74/Koenigsegg-CCR.jpg',
-			'https://www.auto-data.net//images/f0/small1340.jpg',
-			'https://www.auto-data.net//images/f3/small1333.jpg',
-			'https://www.auto-data.net//images/f4/small1334.jpg',
-			'https://www.auto-data.net//images/f5/small1335.jpg',
-			'https://www.auto-data.net//images/f6/small1336.jpg',
-			'https://www.auto-data.net//images/f7/small1337.jpg',
-			'https://www.auto-data.net//images/f8/small1338.jpg',
-			'https://www.auto-data.net//images/f9/small1339.jpg',
 		],
 		variants: [
 			{
