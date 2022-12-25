@@ -1,8 +1,8 @@
 .container {
     max-width: 40vw;
-    min-width: 500px;
+    min-width: 350px;
     max-height: 21vw;
-    min-height: 250px;
+    min-height: 230px;
     border-radius: 15px;
 }
 
